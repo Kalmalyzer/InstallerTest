@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='windows-1252'?>
 <Wix xmlns='http://schemas.microsoft.com/wix/2006/wi'>
-  <Product Name='Foobar 1.0' Id='YOURGUID-86C7-4D14-AEC0-86416A69ABDE' UpgradeCode='YOURGUID-7349-453F-94F6-BCB5110BA4FD'
+  <Product Name='Foobar 1.0' Id='EC750EF9-2869-45C5-A556-197A7718D355' UpgradeCode='3D308381-98DC-4FA0-802A-5D3EBA0A62D5'
     Language='1033' Codepage='1252' Version='1.0.0' Manufacturer='Acme Ltd.'>
 
     <Package Id='*' Keywords='Installer' Description="Acme's Foobar 1.0 Installer"
@@ -15,18 +15,18 @@
         <Directory Id='Acme' Name='Acme'>
           <Directory Id='INSTALLDIR' Name='Foobar 1.0'>
 
-            <Component Id='MainExecutable' Guid='YOURGUID-83F1-4F22-985B-FDB3C8ABD471'>
+            <Component Id='MainExecutable' Guid='2BDF98B9-796C-4123-978A-95A5905B0CEE'>
               <File Id='FoobarEXE' Name='FoobarAppl10.exe' DiskId='1' Source='FoobarAppl10.exe' KeyPath='yes'>
                 <Shortcut Id="startmenuFoobar10" Directory="ProgramMenuDir" Name="Foobar 1.0" WorkingDirectory='INSTALLDIR' Icon="Foobar10.exe" IconIndex="0" Advertise="yes" />
                 <Shortcut Id="desktopFoobar10" Directory="DesktopFolder" Name="Foobar 1.0" WorkingDirectory='INSTALLDIR' Icon="Foobar10.exe" IconIndex="0" Advertise="yes" />
               </File>
             </Component>
 
-            <Component Id='HelperLibrary' Guid='YOURGUID-6BE3-460D-A14F-75658D16550B'>
+            <Component Id='HelperLibrary' Guid='C71FAE12-6574-4523-9679-060472DB9FF5'>
               <File Id='HelperDLL' Name='Helper.dll' DiskId='1' Source='Helper.dll' KeyPath='yes' />
             </Component>
 
-            <Component Id='Manual' Guid='YOURGUID-574D-4A9A-A266-5B5EC2C022A4'>
+            <Component Id='Manual' Guid='1EFF4C26-C4A5-43CA-ABFF-6945238BC95A'>
               <File Id='Manual' Name='Manual.pdf' DiskId='1' Source='Manual.pdf' KeyPath='yes'>
                 <Shortcut Id="startmenuManual" Directory="ProgramMenuDir" Name="Instruction Manual" Advertise="yes" />
               </File>
@@ -38,7 +38,7 @@
 
       <Directory Id="ProgramMenuFolder" Name="Programs">
         <Directory Id="ProgramMenuDir" Name="Foobar 1.0">
-          <Component Id="ProgramMenuDir" Guid="YOURGUID-7E98-44CE-B049-C477CC0A2B00">
+          <Component Id="ProgramMenuDir" Guid="8D41AF52-B355-4D48-A95D-DE3F7C749B5C">
             <RemoveFolder Id='ProgramMenuDir' On='uninstall' />
             <RegistryValue Root='HKCU' Key='Software\[Manufacturer]\[ProductName]' Type='string' Value='' KeyPath='yes' />
           </Component>
